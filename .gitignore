@@ -5,6 +5,6 @@
 .sass-cache/
 *.css.map
 
-.pdf
-.ai
-.psd
+*.pdf
+*.ai
+*.psd
