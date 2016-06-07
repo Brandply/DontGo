@@ -5838,7 +5838,6 @@ body {
     float: right;
     text-align: right; }
     body .top ul li {
-      border-bottom: 1px solid #B7B8B9;
       padding-bottom: 10px;
       display: inline;
       padding-left: 20px;
@@ -5883,6 +5882,10 @@ body {
     background: none; }
     body #testimonial .row div {
       padding: 50px 0; }
+    body #testimonial .row img {
+      max-width: 200px;
+      display: block;
+      margin: auto; }
     body #testimonial p {
       font-size: 12px;
       text-align: center; }
