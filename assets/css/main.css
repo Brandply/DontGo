@@ -5854,14 +5854,17 @@ body {
       margin: 0 auto;
       display: block;
       text-align: center;
-      padding: 15px 0; }
+      padding: 15px 0;
+      margin-bottom: 20px; }
       body nav ul li {
         display: inline-block;
         float: none;
         text-align: center;
-        margin: 0 11px; }
-        body nav ul li a, body nav ul li a:hover, body nav ul li a:visited, body nav ul li a:focus {
+        margin: 0px; }
+        body nav ul li a, body nav ul li a:visited {
           color: #fff; }
+        body nav ul li .selected, body nav ul li :hover {
+          color: #ccced0; }
   body section {
     margin-top: 20px; }
   body #intro form {
@@ -5927,6 +5930,26 @@ body {
         color: #5E2C81; }
         body #footer nav .bottom ul a, body #footer nav .bottom ul a:hover, body #footer nav .bottom ul a:visited, body #footer nav .bottom ul a:focus {
           color: #5E2C81; }
+  body #signup {
+    text-align: center; }
+    body #signup h2 {
+      color: #5E2C81; }
+    body #signup h2, body #signup p {
+      margin-bottom: 20px; }
+    body #signup form div {
+      background-color: #5E2C81;
+      padding: 30px;
+      border-radius: 10px; }
+      body #signup form div input {
+        margin-bottom: 20px; }
+        body #signup form div input:last-child {
+          margin-bottom: 0; }
+    body #signup form .button {
+      background-color: #00953A;
+      color: #fff;
+      border: none;
+      max-width: 50%;
+      margin-top: 20px; }
 
 @media (min-width: 768px) {
   .button {
@@ -5938,7 +5961,10 @@ body {
     padding: 6px;
     position: relative;
     left: -16px;
-    top: 4px; }
+    top: 4px;
+    margin-bottom: 0; }
+    body nav ul li {
+      margin: 0 5px; }
   body #intro .button {
     max-width: 155px;
     margin-top: 7px;
@@ -5958,7 +5984,9 @@ body {
     padding: 12px;
     position: relative;
     left: -16px;
-    top: 5px; } }
+    top: 5px; }
+    body nav ul li {
+      margin: 0 11px; } }
 @media (min-width: 1200px) {
   .button {
     margin-top: 7px;
