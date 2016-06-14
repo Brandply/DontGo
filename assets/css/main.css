@@ -5972,6 +5972,31 @@ body {
     vertical-align: middle; }
     body #benefits .col-xs-3 img {
       display: block; }
+  body #pricing table img {
+    max-width: 25px;
+    width: 100%;
+    margin: 0 auto; }
+  body #pricing table td {
+    border: 1px solid #5F2C81;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center; }
+  body #pricing table thead td, body #pricing table tfoot td {
+    background-color: #009654;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center; }
+    body #pricing table thead td:nth-child(1), body #pricing table tfoot td:nth-child(1) {
+      background-color: #fff;
+      color: #000; }
+    body #pricing table thead td:nth-child(4), body #pricing table tfoot td:nth-child(4) {
+      background-color: #5F2C81; }
+  body #pricing table thead td:nth-child(1) {
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff; }
+  body #pricing table tfoot td:nth-child(1) {
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff; }
 
 @media (min-width: 768px) {
   .button {
