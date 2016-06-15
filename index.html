@@ -1,12 +1,13 @@
 <html>
     <head>
+        <title>Dont'Go</title>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
+        <link rel="icon" type="image/x-icon" href="assets/img//favicon.ico" />
+        <link rel="icon" type="image/png" href="assets/img//favicon.png" />
     </head>
     <body>
         <div class="container">
@@ -40,7 +41,7 @@
             </section>
             <section id="intro">
                 <div class="row">
-                    <div class="col-sm-offset-1 col-sm-6 col-lg-6">
+                    <div class="col-sm-offset-1 col-sm-6 col-lg-6 hide-mobile">
                         <h2>Never lose a website customer again . . . at least without a fight.</h2>
                         <hr />
                         <p>Your website traffic is booming but you have one slight problem, your customers come, they look around and they leave. No lead, no sale, just lost business. So how can you stop this? How can you entice your potential customers to take action now? What if you could use state of the art patented technology to entice your web visitors to take action? What if you could turn 20% more visitors into buyers? What if you could take advantage of all of the benefits of live chat without the employee expense, mind numbing wait times, or having to utilize third parties that don’t know your business?</p>
@@ -49,16 +50,17 @@
 
                         <p>Our patented technology uses artificial intelligence so you don’t need to hire anyone. Visitors engage with a Don'tGo virtual operator, having no idea it isn’t a real person.  They are eventually guided back to complete their order, or form or to call you, instantly recovering potential lost revenue.</p>
 
-                        <p>More people are leaving your website than staying. Don'ßtGo helps keep them there longer and converts shoppers into buyers.</p>
+                        <p>More people are leaving your website than staying. Don'tGo helps keep them there longer and converts shoppers into buyers.</p>
 
                     </div>
                     <div class="col-sm-offset-1 col-sm-3">
-                        <form>
+                        <form method="post" action="send.php">
                             <h4>Learn More!</h4>
-                            <input type="text" class="form-control" name="name" placeholder="Name">
-                            <input type="text" class="form-control" name="email" placeholder="Email">
-                            <input type="text" class="form-control" name="phone" placeholder="Phone Number">
-                            <input type="text" class="form-control" name="website" placeholder="Website">
+                            <input type="text" required class="form-control" name="name" placeholder="Name">
+                            <input type="text" required class="form-control" name="email" placeholder="Email">
+                            <input type="text" required class="form-control" name="phone" placeholder="Phone Number">
+                            <input type="text" required class="form-control" name="website" placeholder="Website">
+                            <button type="submit" class="btn btn-default">Submit</button>
                         </form>
 
                         <iframe src="https://www.youtube.com/embed/rkDFI56oVQ4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -138,27 +140,27 @@
             </section>
         </div>
 
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!--<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>-->
         <!-- BEGIN TeamSalesAgent chat agent code -->
-            <script type="text/JavaScript">
-            /*
-                vagntCampaignId='';
-                vagntLinkInfo='';
-            function vagnt_load() {
-                var vascript = document.createElement('script');
-                vascript.type = "text/javascript";
-                vascript.src = "//vagnt.com/sd/?siteid=1655";
-                document.getElementsByTagName('head')[0].appendChild(vascript);
-            }
-            if (window.attachEvent) {
-                setTimeout(vagnt_load, 1);
-            } else if (window.addEventListener) {
-                window.addEventListener("load", vagnt_load, false);
-            }
-            */
-            </script>
+        <script type="text/JavaScript">
+            vagntCampaignId='';
+            vagntLinkInfo='';
+        function vagnt_load() {
+            var vascript = document.createElement('script');
+            vascript.type = "text/javascript";
+            vascript.src = "//vagnt.com/sd/?siteid=1655";
+            document.getElementsByTagName('head')[0].appendChild(vascript);
+        }
+        if (window.attachEvent) {
+            setTimeout(vagnt_load, 1);
+        } else if (window.addEventListener) {
+            window.addEventListener("load", vagnt_load, false);
+        }
+        </script>
         <!-- END TeamSalesAgent chat agent code V5.03 -->
         <script>
            /* $(document).ready(function(){

@@ -5820,6 +5820,9 @@ a, a:hover, a:visited, a:focus {
   color: #5E0D8B;
   text-decoration: none; }
 
+.hide-mobile {
+  display: none; }
+
 .purple {
   color: #5E2C81; }
 
@@ -5999,6 +6002,9 @@ body {
     border-left: 1px solid #fff; }
 
 @media (min-width: 768px) {
+  .hide-mobile {
+    display: inline; }
+
   .button {
     margin-top: 4px;
     padding: 6px 0 7px;

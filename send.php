@@ -1,6 +1,128 @@
+<?php
+if(isset($_POST['email'])) {
+
+    // EDIT THE 2 LINES BELOW AS REQUIRED
+ 
+    $email_to = "abond@brandply.com";
+ 
+    $email_subject = "test from hansons";
+ 
+     
+ 
+     
+ 
+    function died($error) {
+ 
+        // your error code can go here
+ 
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+ 
+        echo "These errors appear below.<br /><br />";
+ 
+        echo $error."<br /><br />";
+ 
+        echo "Please go back and fix these errors.<br /><br />";
+ 
+        die();
+ 
+    }
+ 
+     
+ 
+    // validation expected data exists
+ 
+    if(!isset($_POST['name']) ||
+ 
+        !isset($_POST['email']) ||
+ 
+        !isset($_POST['phone']) ||
+ 
+        !isset($_POST['website'])) {
+ 
+        died('We are sorry, but there appears to be a problem with the form you submitted.');       
+ 
+    }
+ 
+    $name = $_POST['name']; // required
+ 
+    $email_from = $_POST['email']; // required
+ 
+    $phone = $_POST['phone']; // required
+ 
+    $website = $_POST['website']; // not required
+ 
+ 
+     
+ 
+    $error_message = "";
+ 
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+ 
+  if(!preg_match($email_exp,$email_from)) {
+ 
+    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+ 
+  }
+ 
+    $string_exp = "/^[A-Za-z .'-]+$/";
+ 
+  if(!preg_match($string_exp,$name)) {
+ 
+    $error_message .= 'The Name you entered does not appear to be valid.<br />';
+ 
+  }
+
+ 
+  if(strlen($error_message) > 0) {
+ 
+    died($error_message);
+ 
+  }
+ 
+    $email_message = "Form details below.\n\n";
+ 
+     
+ 
+    function clean_string($string) {
+ 
+      $bad = array("content-type","bcc:","to:","cc:","href");
+ 
+      return str_replace($bad,"",$string);
+ 
+    }
+ 
+     
+ 
+    $email_message .= "Name: ".clean_string($name)."\n";
+ 
+    $email_message .= "Email: ".clean_string($email_from)."\n";
+ 
+    $email_message .= "Phone Number: ".clean_string($phone)."\n";
+ 
+    $email_message .= "Website: ".clean_string($website)."\n";
+ 
+ 
+     
+ 
+     
+ 
+// create email headers
+ 
+$headers = 'From: '.$email_from."\r\n".
+ 
+'Reply-To: '.$email_from."\r\n" .
+ 
+'X-Mailer: PHP/' . phpversion();
+ 
+@mail($email_to, $email_subject, $email_message, $headers);  
+ 
+?>
+ 
+ 
+ 
 <html>
     <head>
-        <title>Dont'Go - Contact</title>
+        <title>Dont'Go - SignUp</title>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +150,7 @@
                                 <li><a href="benefits.html" title="Benefits">Benefits</a></li>
                                 <li><a href="pricing.html" title="Pricing">Pricing</a></li>
                                 <li><a href="signup.html" title="Sign Up">Sign Up</a></li>
-                                <li><a class="selected" href="contact.html" title="Contact">Contact</a></li>
+                                <li><a href="contact.html" title="Contact">Contact</a></li>
                             </ul>
                         <div class="col-sm-3"><div class="button"><a class="button" href="signup.html" title="Tell Me More">Tell Me More</a></div></div>
                     </div>
@@ -39,22 +161,10 @@
                     <img src="assets/img/hero-pg.jpg" alt="Hero Image" title="Hero Image" class="col-md-12" />
                 </div>
             </section>
-            <section id="contact">
+            <section id="signup">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h3>The dedicated team of experts at Don’tGo is happy to answer any questions you may have and will work with you to develop a custom solution to increase your website’s effectiveness.</h3>
-
-                        <p>You can contact us directly at:<br /><br />
-
-                        <span class="purple">Phone:</span><br />
-                        800-922-5555<br /><br />
-
-                        <span class="purple">Email:</span><br />
-                        info@dontgo.com<br /><br />
-
-                        <span class="purple">Address:</span><br />
-                        977 E 14 Mile Road<br />
-                        Troy, MI  48083</p>
+                        <h2>Thank you for your interest. We will be in touch.</h2>
                     </div>
                 </nav>
             </section>
@@ -67,7 +177,7 @@
                                 <li><a href="benefits.html" title="Benefits">Benefits</a></li>
                                 <li><a href="pricing.html" title="Pricing">Pricing</a></li>
                                 <li><a href="signup.html" title="Sign Up">Sign Up</a></li>
-                                <li><a class="selected" href="contact.html" title="Contact">Contact</a></li>
+                                <li><a href="contact.html" title="Contact">Contact</a></li>
                             </ul>
                         </div>
                         <div class="bottom">
@@ -81,6 +191,13 @@
             </section>
         </div>
 
+ 
+ 
+<?php
+ 
+}
+ 
+?>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <!-- BEGIN TeamSalesAgent chat agent code -->
