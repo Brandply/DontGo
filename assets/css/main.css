@@ -5820,6 +5820,9 @@ a, a:hover, a:visited, a:focus {
   color: #5E0D8B;
   text-decoration: none; }
 
+.btn-default {
+  width: 100%; }
+
 .hide-mobile {
   display: none; }
 
@@ -5848,7 +5851,8 @@ body {
       display: inline;
       padding-left: 20px;
       position: relative;
-      left: -5px; }
+      left: -5px;
+      font-size: 15px; }
       body .top ul li:first-child {
         padding-left: 0;
         left: 0; }
@@ -5871,6 +5875,8 @@ body {
           color: #fff; }
         body nav ul li a.selected, body nav ul li a:hover {
           color: #ccced0; }
+  body #hero {
+    margin-bottom: 40px; }
   body section {
     margin-top: 20px; }
   body #intro form {
@@ -5915,6 +5921,8 @@ body {
     body #screen .row ul {
       padding: 0 0 0 15px;
       list-style-type: disc; }
+      body #screen .row ul li img {
+        display: none; }
     body #screen .row .button {
       background-color: #fff; }
       body #screen .row .button a, body #screen .row .button a:hover, body #screen .row .button a:visited, body #screen .row .button a:focus {
@@ -5945,7 +5953,10 @@ body {
     body #signup form div {
       background-color: #5E2C81;
       padding: 30px;
-      border-radius: 10px; }
+      border-radius: 10px;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 500px; }
       body #signup form div input {
         margin-bottom: 20px; }
         body #signup form div input:last-child {
@@ -6000,6 +6011,9 @@ body {
   body #pricing table tfoot td:nth-child(1) {
     border-bottom: 1px solid #fff;
     border-left: 1px solid #fff; }
+  body #contact img {
+    padding-right: 20px;
+    padding-bottom: 20px; }
 
 @media (min-width: 768px) {
   .hide-mobile {
@@ -6013,22 +6027,24 @@ body {
   body nav ul {
     padding: 6px;
     position: relative;
-    left: -16px;
     top: 4px;
     margin-bottom: 0; }
     body nav ul li {
       margin: 0 5px; }
   body #intro .button {
-    max-width: 155px;
-    margin-top: 7px;
+    margin-top: 40px;
+    max-width: 100%;
     padding: 12px 0 13px;
     font-size: 20px; }
   body #testimonial {
     background: url(../img/testimonial_bg.jpg) top left scroll; }
   body #brands img {
     max-width: 145px; }
+  body #brands .row div:nth-child(1) img {
+    max-width: 85px;
+    margin-top: 30px; }
   body #features div {
-    min-height: 400px; } }
+    min-height: 440px; } }
 @media (min-width: 992px) {
   .button {
     margin-top: 5px;
@@ -6038,7 +6054,6 @@ body {
   body nav ul {
     padding: 12px;
     position: relative;
-    left: -16px;
     top: 5px; }
     body nav ul li {
       margin: 0 11px; } }
@@ -6051,7 +6066,6 @@ body {
   body nav ul {
     padding: 17px;
     position: relative;
-    left: -15px;
     top: 7px; } }
 
 /*# sourceMappingURL=main.css.map */

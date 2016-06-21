@@ -6,7 +6,7 @@ if(isset($_POST['email'])) {
  
     $email_to = "abond@brandply.com";
  
-    $email_subject = "test from hansons";
+    $email_subject = "Form from Don'tGo.com";
  
     function died($error) {
  
@@ -75,11 +75,7 @@ if(isset($_POST['email'])) {
  
  
 
-  if(!preg_match($string_exp,$company)) {
- 
-    $error_message .= 'The Company you entered does not appear to be valid.<br />';
- 
-  }
+
 
  
   if(strlen($error_message) > 0) {
@@ -144,6 +140,23 @@ $headers = 'From: '.$email_from."\r\n".
         <link rel="icon" type="image/png" href="assets/img//favicon.png" />
     </head>
     <body>
+    <!-- DONTGO BEGIN -->
+<script type="text/JavaScript">
+    vagntCampaignId='';
+    vagntLinkInfo='';
+function vagnt_load() {
+    var vascript = document.createElement('script');
+    vascript.type = "text/javascript";
+    vascript.src = "//vagnt.com/sd/?siteid=1655";
+    document.getElementsByTagName('head')[0].appendChild(vascript);
+}
+if (window.attachEvent) {
+    setTimeout(vagnt_load, 1);
+} else if (window.addEventListener) {
+    window.addEventListener("load", vagnt_load, false);
+}
+</script>
+<!-- DONTGO END -->
         <div class="container">
             <header>
                 <div class="row">
@@ -156,13 +169,13 @@ $headers = 'From: '.$email_from."\r\n".
                 </div>
                 <nav>
                     <div class="row">
-                        <div class="col-sm-3"><a class="" href="/" title="Don't Go"><img src="assets/img/logo.svg" alt="Don't Go" title="Don't Go" /></a></li></div>
+                        <div class="col-sm-3"><a class="" href="/" title="Don't Go"><img src="assets/img/logo.svg" /></a></li></div>
                             <ul class="col-sm-6">
                                 <li><a href="features.html" title="Features">Features</a></li>
                                 <li><a href="benefits.html" title="Benefits">Benefits</a></li>
                                 <li><a href="pricing.html" title="Pricing">Pricing</a></li>
                                 <li><a href="signup.html" title="Sign Up">Sign Up</a></li>
-                                <li><a href="contact.html" title="Contact">Contact</a></li>
+                                <li><a href="aboutus.html" title="About Us">About Us</a></li>
                             </ul>
                         <div class="col-sm-3"><div class="button"><a class="button" href="signup.html" title="Tell Me More">Tell Me More</a></div></div>
                     </div>
@@ -170,7 +183,7 @@ $headers = 'From: '.$email_from."\r\n".
             </header>
             <section id="hero">
                 <div class="row">
-                    <img src="assets/img/hero-pg.jpg" alt="Hero Image" title="Hero Image" class="col-md-12" />
+                    <img src="assets/img/hero-pg.jpg" class="col-md-12" />
                 </div>
             </section>
             <section id="signup">
@@ -189,7 +202,7 @@ $headers = 'From: '.$email_from."\r\n".
                                 <li><a href="benefits.html" title="Benefits">Benefits</a></li>
                                 <li><a href="pricing.html" title="Pricing">Pricing</a></li>
                                 <li><a href="signup.html" title="Sign Up">Sign Up</a></li>
-                                <li><a href="contact.html" title="Contact">Contact</a></li>
+                                <li><a href="aboutus.html" title="About Us">About Us</a></li>
                             </ul>
                         </div>
                         <div class="bottom">
@@ -212,22 +225,15 @@ $headers = 'From: '.$email_from."\r\n".
 ?>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
-        <!-- BEGIN TeamSalesAgent chat agent code -->
-        <script type="text/JavaScript">
-            vagntCampaignId='';
-            vagntLinkInfo='';
-        function vagnt_load() {
-            var vascript = document.createElement('script');
-            vascript.type = "text/javascript";
-            vascript.src = "//vagnt.com/sd/?siteid=1655";
-            document.getElementsByTagName('head')[0].appendChild(vascript);
-        }
-        if (window.attachEvent) {
-            setTimeout(vagnt_load, 1);
-        } else if (window.addEventListener) {
-            window.addEventListener("load", vagnt_load, false);
-        }
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-79660468-1', 'auto');
+          ga('send', 'pageview');
+
         </script>
-        <!-- END TeamSalesAgent chat agent code V5.03 -->
     </body>
 </html>
