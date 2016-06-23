@@ -17,8 +17,10 @@ get_header(); ?>
 			    ?>					
 				<figure>
 					<!-- <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo $imageURL; ?>-263x263.png" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" /></a> -->
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo get_the_post_thumbnail($page->ID); ?></a>
-					<figcaption><?php the_title(); ?></figcaption>
+					
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><figcaption><h3><?php the_title(); ?></h3></figcaption></a>
+					<?php //echo get_the_post_thumbnail($page->ID); ?>
+					<h6>Date: <?php the_date(); ?></h6>
 					<!-- <p><?php echo get_post_meta($post->ID, 'kind', true) ?></p> -->
 					<p><?php echo substr(get_the_excerpt(),0,80); ?>...</p>
 				</figure>

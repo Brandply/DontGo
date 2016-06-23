@@ -6031,6 +6031,9 @@ body {
     padding: 6px 0 7px;
     font-size: 12px; }
 
+  body nav .logo img {
+    position: relative;
+    top: -9px; }
   body nav ul {
     padding: 6px;
     position: relative;
@@ -6058,6 +6061,9 @@ body {
     padding: 9px 0;
     font-size: 17px; }
 
+  body nav .logo img {
+    position: relative;
+    top: -14px; }
   body nav ul {
     padding: 12px;
     position: relative;

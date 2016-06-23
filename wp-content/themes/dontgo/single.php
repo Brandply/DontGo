@@ -1,9 +1,7 @@
-<?php
-/* Template Name: Home */
-get_header(); ?>
+<?php get_header(); ?>
             <section id="hero">
                 <div class="row">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero.jpg" class="col-md-12" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero-pg.jpg" class="col-md-12" />
                 </div>
             </section>
             <?php while ( have_posts() ) : the_post(); ?>
