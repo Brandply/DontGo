@@ -32,10 +32,56 @@ a, a:hover, a:visited, a:focus
 	a, a:hover, a:visited, a:focus
 		color: #fff
 
+.single-post
+	#newspost
+		img
+			width: auto
 
 div.wpcf7
 	img.ajax-loader
 		display: none
+
+.home
+	.btn-default
+		margin-top: 20px
+.page-id-7
+	nav
+		li
+			&:nth-child(1)
+				a, a:hover
+					color: #ccced0
+.page-id-9
+	nav
+		li
+			&:nth-child(2)
+				a, a:hover
+					color: #ccced0
+	.btn-default
+		margin-top: 20px
+.page-id-11
+	nav
+		li
+			&:nth-child(3)
+				a, a:hover
+					color: #ccced0
+.page-id-13
+	nav
+		li
+			&:nth-child(4)
+				a, a:hover
+					color: #ccced0
+.page-id-24
+	nav
+		li
+			&:nth-child(5)
+				a, a:hover
+					color: #ccced0
+.single-post
+	nav
+		li
+			&:nth-child(4)
+				a, a:hover
+					color: #ccced0
 
 body
 	color: #000
@@ -43,6 +89,7 @@ body
 	.top
 		float: right
 		text-align: right
+		margin-top: 10px
 		ul
 			li
 				padding-bottom: 10px
@@ -68,8 +115,8 @@ body
 				display: inline-block
 				float: none
 				text-align: center
-				margin: 0px
-				a, a:visited
+				margin: 0px 30px
+				a, a:visited, a:focus
 					color: #fff
 				a.selected, a:hover
 					color: #ccced0
@@ -87,11 +134,10 @@ body
 			h4
 				text-align: center
 				margin-top: 0px
-			input
-				margin: 10px 0
 		iframe
-			height: auto
+			height: 208px
 			width: 100%
+			margin-top: 20px
 	#testimonial
 		background: none
 		.row
@@ -148,9 +194,14 @@ body
 				ul
 					background-color: #fff
 					color: #5E2C81
+					li
+						margin: 0 5px
 					a, a:hover, a:visited, a:focus
 						color: #5E2C81
-
+				.fa
+					display: inline
+				.lnk
+					display: none
 	#signup
 		text-align: center
 		h2
