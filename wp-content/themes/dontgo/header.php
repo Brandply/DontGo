@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
         <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/assets/img//favicon.ico" />
         <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/img//favicon.png" />
+        <script src="//use.fontawesome.com/3778c4e29f.js"></script>
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
@@ -42,7 +43,7 @@ if (window.attachEvent) {
                 </div>
                 <nav>
                     <div class="row">
-                        <div class="col-sm-3"><a class="" href="/dontgo/" title="Don't Go"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" /></a></li></div>
+                        <div class="col-sm-3"><a class="" href="/" title="Don't Go"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" /></a></li></div>
                             <ul class="col-sm-6 hide-mobile">
                                 <li><a href="features" title="Features">Features</a></li>
                                 <li><a href="benefits" title="Benefits">Benefits</a></li>

@@ -5976,7 +5976,7 @@ body {
         background-color: #fff;
         color: #5E2C81; }
         body #footer nav .bottom ul li {
-          margin: 0 5px; }
+          margin: 0 3px; }
         body #footer nav .bottom ul a, body #footer nav .bottom ul a:hover, body #footer nav .bottom ul a:visited, body #footer nav .bottom ul a:focus {
           color: #5E2C81; }
       body #footer nav .bottom .fa {
@@ -6091,9 +6091,9 @@ body {
     margin-top: 30px; }
   body #features div {
     min-height: 440px; }
-  body #footer .bottom .fa {
+  body #footer nav .bottom .fa {
     display: none; }
-  body #footer .bottom .lnk {
+  body #footer nav .bottom .lnk {
     display: inline; } }
 @media (min-width: 992px) {
   .button {
